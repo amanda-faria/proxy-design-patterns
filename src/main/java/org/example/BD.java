@@ -5,13 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BD {
-    private static Map<Integer, Desenvolvedor> desenvolvedor = new HashMap<>();
+    private static Map<Integer, Desenvolvedor> desenvolvedores = new HashMap<>();
 
     public static Desenvolvedor getDesenvolvedor(Integer matricula) {
-        return desenvolvedor.get(matricula);
+        return desenvolvedores.get(matricula);
     }
 
     public static void addDesenvolvedor(Desenvolvedor desenvolvedor) {
-        desenvolvedor.put(desenvolvedor.getMatricula(), desenvolvedor);
+        desenvolvedores.put(desenvolvedor.getMatricula(), desenvolvedor);
     }
 }

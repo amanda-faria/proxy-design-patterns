@@ -22,7 +22,7 @@ public class DesenvolvedorProxy implements IDesenvolvedor {
 
     @Override
     public List<Float> obterNotas(Gestor gestor) {
-        if (!gestor.isAdministrador()) {
+        if (!gestor.isGestor()) {
             throw new IllegalArgumentException("Gestor não autorizado");
         }
         if (this.desenvolvedor == null) {

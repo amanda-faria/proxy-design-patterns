@@ -2,11 +2,11 @@ package org.example;
 
 public class Gestor {
     private String nome;
-    private boolean administrador;
+    private boolean gestor;
 
-    public Gestor(String nome, boolean administrador) {
+    public Gestor(String nome, boolean gestor) {
         this.nome = nome;
-        this.administrador = administrador;
+        this.gestor = gestor;
     }
 
     public String getNome() {
@@ -17,11 +17,11 @@ public class Gestor {
         this.nome = nome;
     }
 
-    public boolean isAdministrador() {
-        return administrador;
+    public boolean isGestor() {
+        return gestor;
     }
 
-    public void setAdministrador(boolean administrador) {
-        this.administrador = administrador;
+    public void setGestor(boolean administrador) {
+        this.gestor = administrador;
     }
 }
